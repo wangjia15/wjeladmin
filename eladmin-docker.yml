@@ -43,8 +43,8 @@ services:
     volumes:
     - ./eladmin-server:/app
     - ~/.m2:/root/.m2
-    - #~/.eladmin/logs/server:/app/log
-    - #~/.eladmin/upload:/root/.fame/upload
+    #- ~/.eladmin/logs/server:/app/log
+    #- ~/.eladmin/upload:/root/.fame/upload
     expose:
     - "9090"
     command: mvn clean spring-boot:run -Dspring-boot.run.profiles=docker -Dmaven.test.skip=true
